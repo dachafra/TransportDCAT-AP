@@ -26,7 +26,7 @@
 	dct:hasPartOf <#catalog-02> ; #optional
 	dct:isPartOf <#catalog-03> ;  #optional
 	dcat:record <#catalogRecord-01> ; #optional
-	dct:rights ":public". #optional
+	dct:rights "public". #optional
  
 
 <#dataset-01> a dcat:Dataset;
@@ -43,7 +43,7 @@
 	dct:accrualPeriodicity "mensual" ;	#optional
 	dct:hasVersion <#dataset-0101> ;	#optional
 	dct:identifier "M8Estaciones" ;	#optional
-	dct:isVersionOf	<#dataset-0102> ;	#optional
+	dct:isVersionOf <#dataset-0102> ;	#optional
 	dcat:landingPage <https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer/0>;	#optional
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;	#optional
 	adms:identifier	"Other id, see dcat-ap documentation" ;	#optional
@@ -55,7 +55,7 @@
 	dct:modified "2015-12-05"^^xsd:date ;	#optional
 	owl:versionInfo	"1.0" ;	#optional
 	adms:versionNotes "final version for 2016"; #optional
-	dct:accessRights ":public" ;	#optional
+	dct:accessRights "public" ;	#optional
 	dct:type <http://eurovoc.europa.eu/4512> ;	#optional	
 	dct:provenance "Este dataset pertenece al conjunto de todos los datos abiertos sobre autobuses interurbanos mostrados en datos.crtm.es".	#optional
 
@@ -79,7 +79,7 @@
 	dct:conformsTo "CSV" ; #optional
 	dcat:mediaType "(from IANA list)" ; #optional
 	dct:issued "2015-12-05"^^xsd:date ;	#optional
-	dct:rights ":public" ; #optional
+	dct:rights "public" ; #optional
 	adms:status "updated" ; #optional
 	dct:title "CSV Paradas de autobuses interurbanos CRTM" ; #optional
 	dct:modified "2015-12-05"^^xsd:date. #optional
