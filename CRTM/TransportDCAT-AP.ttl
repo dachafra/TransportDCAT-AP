@@ -1,112 +1,112 @@
-@base <http//datos.crtm.es/metadata>
-@prefix adms: <http://www.w3.org/ns/adms#>
-@prefix dcat: <http://www.w3.org/ns/dcat#>
-@prefix dct: <http://purl.org/dc/terms/>
-@prefix foaf: <http://xmlns.com/foaf/0.1/>
-@prefix owl: <http://www.w3.org/2002/07/owl#>
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-@prefix schema: <http://schema.org/>
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>
-@prefix spdx: <http://spdx.org/rdf/terms#>
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#>	
+@base <http//datos.crtm.es/metadata>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.	
 
-:catalog-01 a dcat:Catalog ;	
-	dcat:dataset :dataset-01, :dataset-02, :dataset-03 ; #mandatory
+<#catalog-01> a dcat:Catalog ;	
+	dcat:dataset <#dataset-01> ; #mandatory
 	dct:description "Conjunto de datos de los autobueses interurbanos del CRTM" ; #mandatory
-	dct:publisher :agent-01 ; #madantory
+	dct:publisher <#agent-01> ; #madantory
 	dct:title "Autobuses Interurbanos del CRTM" ; #mandatory
-	dct:spatial {"type":"Polygon","coordinates":[[[2.072, 49.943],[2.072, 55.816], [-6.236, 55.816], [-6.236, 49.943], [2.072, 49.943]]]}; #mandatory
-	foaf:homepage <http://datos.crtm.es/> ; #recommended 
+	dct:spatial <http://sws.geonames.org/3117735/>; #mandatory
+	foaf:homepage <http://datos.crtm.es> ; #recommended 
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;  #recommended
 	dct:license <http://www.crtm.es/licencia-de-uso> ; #recommended
 	dct:issued "2011-12-05"^^xsd:date ; #recommended
-	dcat:themeTaxonomy :conceptScheme-01 ; #recommended
+	dcat:themeTaxonomy <#conceptScheme-01> ; #recommended
 	dct:modified "2016-12-05"^^xsd:date ; #recommended
-	dct:hasPartOf :catalog-02 ; #optional
-	dct:isPartOf :catalog-03 ;  #optional
-	dcat:record :catalogRecord-01 ; #optional
-	dct:rights :public. #optional
+	dct:hasPartOf <#catalog-02> ; #optional
+	dct:isPartOf <#catalog-03> ;  #optional
+	dcat:record <#catalogRecord-01> ; #optional
+	dct:rights ":public". #optional
  
 
-:dataset-01 a dcat:Dataset;
+<#dataset-01> a dcat:Dataset;
 	dct:description "Localización de las paradas por las que pasan buses interurbanos en la comunidad de madrid";	#mandatory
 	dct:title "Paradas de buses Interurbanos" ;	#mandatory
-	dct:spatial	{"type":"Polygon","coordinates":[[[2.072, 49.943],[2.072, 55.816], [-6.236, 55.816], [-6.236, 49.943], [2.072, 49.943]]]}; #mandatory
+	dct:spatial <http://sws.geonames.org/3117735/>; #mandatory
 	dcat:keyWord "{[Buses Interurbanos}, {Paradas}, AdminUnitLevel3 (Province): Madrid, España}" ;	#mandatory
-	dcat:contactPoint <mailto: contacto@crtm.es> ;	#recommended
-	dcat:distribution :distribution-01 ;	#recommended
+	dcat:contactPoint "<mailto: contacto@crtm.es>" ;	#recommended
+	dcat:distribution <#distribution-01> ;	#recommended
 	dcat:theme <http://eurovoc.europa.eu/7359> ;	#recommended
-	dct:publisher :agent-01 ;	#recommended
+	dct:publisher <#agent-01> ;	#recommended
 	dct:conformsTo "GTFS" ;	#optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;	#optional
 	dct:accrualPeriodicity "mensual" ;	#optional
-	dct:hasVersion :dataset-0101 ;	#optional
+	dct:hasVersion <#dataset-0101> ;	#optional
 	dct:identifier "M8Estaciones" ;	#optional
-	dct:isVersionOf	:dataset-0102 ;	#optional
+	dct:isVersionOf	<#dataset-0102> ;	#optional
 	dcat:landingPage <https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer/0>;	#optional
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;	#optional
 	adms:identifier	"Other id, see dcat-ap documentation" ;	#optional
 	dct:relation <http://data-crtm.opendata.arcgis.com/datasets?q=M8+red&sort_by=relevance> ;	#optional
 	dct:issued "2015-01-01"^^xsd:date ;	#optional
-	adms:sample	:distribution-01 ;	#optional
-	dct:source :dataset-05 ;	#optional
-	dct:temporal :periodOfTime-01 ;	#optional
+	adms:sample	<#distribution-01> ;	#optional
+	dct:source <#dataset-05> ;	#optional
+	dct:temporal <#periodOfTime-01> ;	#optional
 	dct:modified "2015-12-05"^^xsd:date ;	#optional
 	owl:versionInfo	"1.0" ;	#optional
-	adms:versionNotes "final version for 2016" #optional
-	dct:accessRights :public ;	#optional
+	adms:versionNotes "final version for 2016"; #optional
+	dct:accessRights ":public" ;	#optional
 	dct:type <http://eurovoc.europa.eu/4512> ;	#optional	
-	dct:provenance "Este dataset pertenece al conjunto de todos los datos abiertos sobre autobuses interurbanos mostrados en datos.crtm.es". ;	#optional
+	dct:provenance "Este dataset pertenece al conjunto de todos los datos abiertos sobre autobuses interurbanos mostrados en datos.crtm.es".	#optional
 
 
 
-:agent-01 a foaf:Agent ;
+<#agent-01> a foaf:Agent ;
 	foaf:name "Consorcio Regional de Transporte de Madrid" ; #mandatory
 	dct:type <http://eurovoc.europa.eu/3060>. #recommended
 	
 
-:distribution-01 a dcat:Distribution;
+<#distribution-01> a dcat:Distribution;
 	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.csv> ; #mandatory
 	dct:description	"Distribucion del dataset de las paradas autobuses urbanos de la comuidad de madrid en CSV" ; #recommended
 	dct:format "CSV" ; #recommended
 	dct:license <http://www.crtm.es/licencia-de-uso> ; #recommended
-	dcat:byteSize "1MG" ; #optional
-	spdz:checksum :checksum-01 ; #optional
+	dcat:byteSize 1.0  ; #optional
+	spdx:checksum <#checksum-01> ; #optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ; #optional
 	dcat:downloadURL <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ; #optional
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;	#optional
 	dct:conformsTo "CSV" ; #optional
 	dcat:mediaType "(from IANA list)" ; #optional
 	dct:issued "2015-12-05"^^xsd:date ;	#optional
-	dct:rights :public ; #optional
+	dct:rights ":public" ; #optional
 	adms:status "updated" ; #optional
 	dct:title "CSV Paradas de autobuses interurbanos CRTM" ; #optional
 	dct:modified "2015-12-05"^^xsd:date. #optional
 	
 
-:catalogRecord-01 a dcat:CatalogRecord;
-	foaf:primaryTopic :dataset-01 #mandatory
+<#catalogRecord-01> a dcat:CatalogRecord;
+	foaf:primaryTopic <#dataset-01>; #mandatory
 	dct:modified "2015-12-05"^^xsd:date ; #mandatory
 	dct:conformsTo "TransportDCAT-AP"; #recommended 
 	adms:status	"updated"; #recommended
 	dct:issued "2015-12-05"^^xsd:date ; #recommended
 	dct:description	"Incorporación del dataset de paradas de autobuses interurbanos del CRTM al catalogo de buses interurbanos" ; #optional
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ; #optional
-	dct:source :catalogRecord-011 ; #optional
+	dct:source <#catalogRecord-011> ; #optional
 	dct:title "Paradas autobuses interurbanos - Incorporación". #optional
 	
 
-:skosConceptScheme-01 a skos:ConceptScheme;
+<#conceptScheme-01> a skos:ConceptScheme;
 	dct:title "Conjunto de medios de transporte público del CRTM". #mandatory
 	
 
-:checksum-01 a spdx:Checksum;
+<#checksum-01> a spdx:Checksum;
  	spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_sha256>; #mandatory
  	spdx:checksumValue "11542312". #mandatory
  	
 
-:periodOfTime-01 a dct:PeriodOfTime;
+<#periodOfTime-01> a dct:PeriodOfTime;
 	schema:startDate "2011-05-12"^^xsd:date; #optional
 	schema:endDate "2015-05-12"^^xsd:date. #optional
 	
