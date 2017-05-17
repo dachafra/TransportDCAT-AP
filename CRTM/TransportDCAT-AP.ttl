@@ -21,7 +21,7 @@
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;  #recommended
 	dct:license <http://www.crtm.es/licencia-de-uso> ; #recommended
 	dct:issued "2011-12-05"^^xsd:date ; #recommended
-	dcat:themeTaxonomy <http//datos.crtm.es/skos#vocabularioMetadataCRTM> ; #recommended
+	dcat:themeTaxonomy <http//:datos.crtm.es/skos#vocabularioMetadataCRTM> ; #recommended
 	dct:modified "2016-12-05"^^xsd:date ; #recommended
 	dct:hasPartOf <#catalog-02> ; #optional
 	dct:isPartOf <#catalog-03> ;  #optional
@@ -38,8 +38,8 @@
 	dcat:keyword "AdminUnitLevel3 (Province): Madrid, Spain"; 	#mandatory
 	dcat:contactPoint "<mailto: contacto@crtm.es>" ;	#recommended
 	dcat:distribution <#distribution-01> ;	#recommended
-	dcat:theme <http//datos.crtm.es/skos/theme#businterurbano> ;	#recommended
-	dcat:theme <http//datos.crtm.es/skos/theme#paradas> ; #recommended
+	dcat:theme <http//:datos.crtm.es/skos/theme#businterurbano> ;	#recommended
+	dcat:theme <http//:datos.crtm.es/skos/theme#paradas> ; #recommended
 	dct:publisher <#agent-01> ;	#recommended
 	dct:conformsTo "GTFS" ;	#optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;	#optional
@@ -59,7 +59,7 @@
 	owl:versionInfo	"1.0" ;	#optional
 	adms:versionNotes "final version for 2016"; #optional
 	dct:accessRights "public" ;	#optional
-	dct:type <http//datos.crtm.es/skos/type#CRTM> ;	#optional	
+	dct:type <http//:datos.crtm.es/skos/type#CRTM> ;	#optional	
 	dct:provenance "Este dataset pertenece al conjunto de todos los datos abiertos sobre autobuses interurbanos mostrados en datos.crtm.es".	#optional
 
 
