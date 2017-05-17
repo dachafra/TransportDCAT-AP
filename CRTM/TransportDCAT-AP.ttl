@@ -18,7 +18,7 @@
 	dct:title "Autobuses Interurbanos del CRTM" ; #mandatory
 	dct:spatial <http://sws.geonames.org/3117735/>; #mandatory
 	foaf:homepage <http://datos.crtm.es> ; #recommended 
-	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;  #recommended
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;  #recommended
 	dct:license <http://www.crtm.es/licencia-de-uso> ; #recommended
 	dct:issued "2011-12-05"^^xsd:date ; #recommended
 	dcat:themeTaxonomy <#conceptScheme-01> ; #recommended
@@ -33,20 +33,22 @@
 	dct:description "Localización de las paradas por las que pasan buses interurbanos en la comunidad de madrid";	#mandatory
 	dct:title "Paradas de buses Interurbanos" ;	#mandatory
 	dct:spatial <http://sws.geonames.org/3117735/>; #mandatory
-	dcat:keyWord "{[Buses Interurbanos}, {Paradas}, AdminUnitLevel3 (Province): Madrid, España}" ;	#mandatory
+	dcat:keyword "Interurban Bus";
+	dcat:keyword "Stops";
+	dcat:keyword "AdminUnitLevel3 (Province): Madrid, Spain"; 	#mandatory
 	dcat:contactPoint "<mailto: contacto@crtm.es>" ;	#recommended
 	dcat:distribution <#distribution-01> ;	#recommended
 	dcat:theme <http://eurovoc.europa.eu/7359> ;	#recommended
 	dct:publisher <#agent-01> ;	#recommended
 	dct:conformsTo "GTFS" ;	#optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;	#optional
-	dct:accrualPeriodicity "mensual" ;	#optional
+	dct:accrualPeriodicity <http://purl.org/cld/freq/monthly> ;	#optional
 	dct:hasVersion <#dataset-0101> ;	#optional
 	dct:identifier "M8Estaciones" ;	#optional
 	dct:isVersionOf <#dataset-0102> ;	#optional
 	dcat:landingPage <https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer/0>;	#optional
-	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;	#optional
-	adms:identifier	"Other id, see dcat-ap documentation" ;	#optional
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;	#optional
+	adms:identifier	"19884a02ac044270b91fa478d80f7858_0" ;	#optional
 	dct:relation <http://data-crtm.opendata.arcgis.com/datasets?q=M8+red&sort_by=relevance> ;	#optional
 	dct:issued "2015-01-01"^^xsd:date ;	#optional
 	adms:sample	<#distribution-01> ;	#optional
@@ -61,7 +63,7 @@
 
 
 
-<#agent-01> a foaf:Agent ;
+<#agent-01> a foaf:Organization ;
 	foaf:name "Consorcio Regional de Transporte de Madrid" ; #mandatory
 	dct:type <http://eurovoc.europa.eu/3060>. #recommended
 	
@@ -75,9 +77,9 @@
 	spdx:checksum <#checksum-01> ; #optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ; #optional
 	dcat:downloadURL <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ; #optional
-	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ;	#optional
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;	#optional
 	dct:conformsTo "CSV" ; #optional
-	dcat:mediaType "(from IANA list)" ; #optional
+	dcat:mediaType "text/csv" ; #optional
 	dct:issued "2015-12-05"^^xsd:date ;	#optional
 	dct:rights "public" ; #optional
 	adms:status "updated" ; #optional
@@ -92,7 +94,7 @@
 	adms:status	"updated"; #recommended
 	dct:issued "2015-12-05"^^xsd:date ; #recommended
 	dct:description	"Incorporación del dataset de paradas de autobuses interurbanos del CRTM al catalogo de buses interurbanos" ; #optional
-	dct:language <http://id.loc.gov/vocabulary/iso639-1/es.html> ; #optional
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ; #optional
 	dct:source <#catalogRecord-011> ; #optional
 	dct:title "Paradas autobuses interurbanos - Incorporación". #optional
 	
