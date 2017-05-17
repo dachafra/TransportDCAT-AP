@@ -38,7 +38,8 @@
 	dcat:keyword "AdminUnitLevel3 (Province): Madrid, Spain"; 	#mandatory
 	dcat:contactPoint "<mailto: contacto@crtm.es>" ;	#recommended
 	dcat:distribution <#distribution-01> ;	#recommended
-	dcat:theme <http//datos.crtm.es/skos/theme#CRTM> ;	#recommended
+	dcat:theme <http//datos.crtm.es/skos/theme#businterurbano> ;	#recommended
+	dcat:theme <http//datos.crtm.es/skos/theme#paradas> ; #recommended
 	dct:publisher <#agent-01> ;	#recommended
 	dct:conformsTo "GTFS" ;	#optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;	#optional
@@ -58,7 +59,7 @@
 	owl:versionInfo	"1.0" ;	#optional
 	adms:versionNotes "final version for 2016"; #optional
 	dct:accessRights "public" ;	#optional
-	dct:type <http//datos.crtm.es/skos/type#businterurbano> ;	#optional	
+	dct:type <http//datos.crtm.es/skos/type#CRTM> ;	#optional	
 	dct:provenance "Este dataset pertenece al conjunto de todos los datos abiertos sobre autobuses interurbanos mostrados en datos.crtm.es".	#optional
 
 
