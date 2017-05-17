@@ -1,0 +1,59 @@
+@base <http//datos.crtm.es/skos/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix crtmtype: <http//datos.crtm.es/skos/type#> .
+@prefix crtmtheme: <http//datos.crtm.es/skos/theme#> .
+
+<vocabularioMetadataCRTM> rdf:type skos:ConceptScheme;
+ dct:title "Vocabulario para los metadatos de los  medios de transporte público del CRTM"@es. 
+
+#type
+crtmtype:metro rdf:type skos:Concept;
+ skos:prefLabel "Ferrocarril eléctrico destinado al transporte público en las ciudades, que circula total o parcialmente bajo tierra"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtype:metroligero rdf:type skos:Concept;
+ skos:prefLabel "Tren ligero o tranvía que une el Área Metropolitana de la Comunidad de Madrid, con la ciudad de Madrid"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtype:busurbano rdf:type skos:Concept;
+ skos:prefLabel "Autobús utilizado para el transporte público de distancias cortas dentro de la ciudad de Madrid"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtype:businterurbano rdf:type skos:Concept;
+ skos:prefLabel "Autobús utilizado para el transporte público de distancias largas dentro de la Comnuidad de Madrid"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtype:cercanias rdf:type skos:Concept;
+ skos:prefLabel "Cercanías Madrid es el servicio ferroviario que comunica la ciudad de Madrid con su área metropolitana y las principales poblaciones de la Comunidad de Madrid."@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+
+#themes
+crtmtheme:EMT rdf:type skos:Concept;
+ skos:prefLabel "Datos pertenecientes a la empresa municipal de transportes de madrid"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtheme:Renfe rdf:type skos:Concept;
+ skos:prefLabel "Datos pertenecientes a Renfe"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtheme:CRTM rdf:type skos:Concept;
+ skos:prefLabel "Datos pertenecientes al CRTM"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtheme:METRO rdf:type skos:Concept;
+ skos:prefLabel "Datos pertenecientes al METRO"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+crtmtheme:ExternalCompany rdf:type skos:Concept;
+ skos:prefLabel "Datos pertenecientes empresas externas que ofrecen servicios dentro de la Comunidad de Madrid"@es;
+ skos:inScheme <vocabularioMetadataCRTM>.
+
+
+
+
+
+
+
