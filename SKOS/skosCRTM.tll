@@ -1,84 +1,64 @@
-@base <http//:datos.crtm.es/skos#> .
+@base <http//:datos.crtm.es/kos/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix crtmtheme: <http//:datos.crtm.es/skos/theme#> .
-@prefix crtmtype: <http//:datos.crtm.es/skos/type#> .
 
-<vocabularioMetadataCRTM> rdf:type skos:ConceptScheme;
- dct:title "Vocabulario para los metadatos de los  medios de transporte público del CRTM"@es. 
+<vocabmetadata> rdf:type skos:ConceptScheme;
+ dct:title "Vocabulary for the metadata of public transport services of the Consorcio Regional de Transportes de Madrid (CRTM)"@en. 
+ dct:title "Vocabulario para los metadatos de los medios de transporte público del Consorcio Regional de Transportes de Madrid (CRTM)"@es. 
 
 #theme
-crtmtheme:metro rdf:type skos:Concept;
- skos:prefLabel "Ferrocarril eléctrico destinado al transporte público en las ciudades, que circula total o parcialmente bajo tierra"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/metro> rdf:type skos:Concept;
+ skos:prefLabel "The public underground railway system in the Community of Madrid"@en;
+ skos:prefLabel "Ferrocarril eléctrico, que circula parcialmente bajo tierra, destinado al transporte público en la Comunidad de Madrid"@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:metroligero rdf:type skos:Concept;
+<vocabmetadata/tram> rdf:type skos:Concept;
+ skos:prefLabel "Tram that connects the Metropolitan Area of the Community of Madrid, with the city of Madrid"@en;
  skos:prefLabel "Tren ligero o tranvía que une el Área Metropolitana de la Comunidad de Madrid, con la ciudad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:busurbano rdf:type skos:Concept;
+<vocabmetadata/urbanbus> rdf:type skos:Concept;
+ skos:prefLabel "Buses used in public transport to connect short distances within the city of Madrid"@en;
  skos:prefLabel "Autobús utilizado para el transporte público de distancias cortas dentro de la ciudad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:businterurbano rdf:type skos:Concept;
+<vocabmetadata/interurbanbus> rdf:type skos:Concept;
+ skos:prefLabel "Buses used in public transport to connect long distances within the Community of Madrid"@en;
  skos:prefLabel "Autobús utilizado para el transporte público de distancias largas dentro de la Comnuidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:cercanias rdf:type skos:Concept;
- skos:prefLabel "Cercanías Madrid es el servicio ferroviario que comunica la ciudad de Madrid con su área metropolitana y las principales poblaciones de la Comunidad de Madrid."@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/train> rdf:type skos:Concept;
+ skos:prefLabel "Railway service that connects the city of Madrid with the main populations of the Community of Madrid."@en;
+ skos:prefLabel "Servicio ferroviario que comunica la ciudad de Madrid con las principales poblaciones de la Comunidad de Madrid."@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:lineas rdf:type skos:Concept;
- skos:prefLabel "Recorrido de un transporte publico en la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/line> rdf:type skos:Concept;
+ skos:prefLabel "Travel done by any type of public transport within the Community of Madrid"@en;
+ skos:prefLabel "Recorrido que realiza cualquier tipo transporte público dentro la Comunidad de Madrid"@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:estaciones rdf:type skos:Concept;
- skos:prefLabel "Lugares donde realizan paradas el metro, metro liego o cercanias en la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/station> rdf:type skos:Concept;
+ skos:prefLabel "Place where metro, tram or train stop within the Community of Madrid"@en;
+ skos:prefLabel "Lugar donde realizan paradas del metro, metro ligero o cercanias en la Comunidad de Madrid"@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:accesos rdf:type skos:Concept;
+<vocabmetadata/access> rdf:type skos:Concept;
+ skos:prefLabel "Place where passengers enter to metro, tram or train stations within the Community of Madrid"@en;
  skos:prefLabel "Lugar por donde se entra a las estaciones del metro, metro ligero o cercanías de la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:andenes rdf:type skos:Concept;
- skos:prefLabel "Plataformas elevada a los lados de la vía del cercanias, metro o metro ligero que facilitan el acceso y salida de los pasajeros dentro de la Comunidad de Madrid."@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/platform> rdf:type skos:Concept;
+ skos:prefLabel "Elevated place that allows passengers to gett on or gett off in the metro, tram and train stations within the Community of Madrid"@en;
+ skos:prefLabel "Plataforma elevada que permite a los pasajeros subir y bajar del cercanias, metro o metro ligero en las estaciones dentro de la Comunidad de Madrid."@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:vestibulos rdf:type skos:Concept;
- skos:prefLabel "Espacio abierto antes del acceso a los andanes de las estaciones de metro, metro ligero o cercanías de la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
+<vocabmetadata/hall> rdf:type skos:Concept;
+ skos:prefLabel "Open space before the access to the platforms of the metro, tram or train within the Community of Madrid"@en;
+ skos:prefLabel "Espacio abierto antes del acceso a los andenes de las estaciones de metro, metro ligero o cercanías de la Comunidad de Madrid"@es;
+ skos:inScheme <vocabmetadata>.
 
-crtmtheme:paradas rdf:type skos:Concept;
+<vocabmetadata/stop> rdf:type skos:Concept;
+ skos:prefLabel "A place designated for a bus or train to halt and pick up or set down passengers within the Community of Madrid"@en;
  skos:prefLabel "Lugar en el que se detienen los vehículos de transporte público para recoger o dejar viajeros dentro de la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-
-
-#tyype
-crtmtype:EMT rdf:type skos:Concept;
- skos:prefLabel "Datos pertenecientes a la empresa municipal de transportes de madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-crtmtype:Renfe rdf:type skos:Concept;
- skos:prefLabel "Datos pertenecientes a Renfe"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-crtmtype:CRTM rdf:type skos:Concept;
- skos:prefLabel "Datos pertenecientes al CRTM"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-crtmtype:METRO rdf:type skos:Concept;
- skos:prefLabel "Datos pertenecientes al METRO"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-crtmtype:ExternalCompany rdf:type skos:Concept;
- skos:prefLabel "Datos pertenecientes empresas externas que ofrecen servicios dentro de la Comunidad de Madrid"@es;
- skos:inScheme <vocabularioMetadataCRTM>.
-
-
-
-
-
-
-
+ skos:inScheme <vocabmetadata>.
