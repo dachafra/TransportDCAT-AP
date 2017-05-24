@@ -1,4 +1,4 @@
-@base <http//datos.crtm.es/metadata>.
+@base <http://datos.crtm.es/metadata>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dct: <http://purl.org/dc/terms/>.
@@ -21,7 +21,7 @@
 	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;  #recommended
 	dct:license <http://www.crtm.es/licencia-de-uso> ; #recommended
 	dct:issued "2011-12-05"^^xsd:date ; #recommended
-	dcat:themeTaxonomy <http//:datos.crtm.es/kos/vocabmetadata> ; #recommended
+	dcat:themeTaxonomy <http://datos.crtm.es/kos/vocabmetadata> ; #recommended
 	dct:modified "2016-12-05"^^xsd:date ; #recommended
 	dct:hasPartOf <#catalog-02> ; #optional
 	dct:isPartOf <#catalog-03> ;  #optional
@@ -38,8 +38,8 @@
 	dcat:keyword "AdminUnitLevel3 (Province): Madrid, Spain"; 	#mandatory
 	dcat:contactPoint "<mailto: contacto@crtm.es>" ;	#recommended
 	dcat:distribution <#distribution-01> ;	#recommended
-	dcat:theme <http//:datos.crtm.es/kos/vocabmetadata/interurbanbus> ;	#recommended
-	dcat:theme <http//:datos.crtm.es/kos/vocabmetadata/stops> ; #recommended
+	dcat:theme <http://datos.crtm.es/kos/vocabmetadata/interurbanbus> ;	#recommended
+	dcat:theme <http://datos.crtm.es/kos/vocabmetadata/stops> ; #recommended
 	dct:publisher <#agent-01> ;	#recommended
 	dct:conformsTo "GTFS" ;	#optional
 	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;	#optional
