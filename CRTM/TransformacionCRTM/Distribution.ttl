@@ -1,0 +1,767 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=357e63c2904f43aeb5d8a267a64346d8> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/357e63c2904f43aeb5d8a267a64346d8/google_transit_M9.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDMPG6l%2FBtiIx9B%2F2miK3Az7jVom75Y9CpyyLVPRJZijuY7IJb6t%2Fus94O8KvPE7RsKR%2FU1XlyCweU0aqDEAyV7f65gKuvzahjmiiNFxnjJDjvUzM4t3Eb8DiIiHZKURjumibBQIefEqerLc2mo1uVJiJ94UloYynTWT6%2BURqNHLDhd20Ho9Fsa40EdeBp88lyvyy67QYBk6D8Mj0EwSTemmQXekcauJz5dDZJtDn5hF587QVeZdvXvGLV1NCY36qI0p37%2BCbYWDP%2BlcJfPnLnZ8Wdeggj8r2mUuBGf%2BvAMiOmt20Kxv2Nq3wlI49JSnZPNQEvL75tLfxozmMdQPS2lMKnGBSNdL%2FlLHotyMaPwpdyXW3IF7lG6VstUNZq1rtyXJP6ijgHUX4pwojf9OsIj%2BFGVVNUt7oVm0%2BUpvi5BQMx4479rg80ywoxfm98Kr9kNyXOsJtrznivOD0GAT%2BNBcWJORWND7XzR%2B7acr7ef%2FYF2p7gh48fspQyqcjqEkuD6rcE2auBm6YkaRWVPPZGOrGkuKm9GPo4Za5XKvx5CVYzSYE%2FTNJcowZXSjmwz%2BNTGdsIfCM1sAi%2F0RKdaZI85DNT1IVCEQozuacyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204520Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIAI6OBK3VAXLTT6Y2Q%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ad0e5177ea31978c54c8d6a4b63a55ea3f8b71abab80976bc24e60f78d9b78d2> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS Urban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurban-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/885399f83408473c8d815e40c5e702b7/google_transit_M89.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDEFQg6goh6f2jntEsyKcA%2BELHD5arhNwZIb3maLPW6kSWIoSswmxWMrSJcO0qANJYwa1QVbT4f1fE3FVQEE%2BfflbNgEDTPVNCSiOamh0NaDpzlXO2SVXOVShltveycuqYbsrVRgkDi35fyujPkwoUyQojwb6GToMEMjYv565Qa6LIRlEde6fQApgweA1OCCkVffbKscoI3fxUG5ARWxgMC%2F23dqAQC6Q5v%2Bjle4xqBiCJU%2B41C71GKBXG%2BWW2uWeNwBqdlDkIPfgs7cZ18lcv4T%2Fht8VDuD8EAo16U0NrvKdiKCxsy47h2sZOXtPy%2FB%2FmaGBK4wxzi%2BGx%2BXK8U1mJMm66Wp7Ybu8EgVcl9BNcfdMkKoTTik4CnrduzqHvE3e10JsKjcyqTV1zYEpLpmwsS7YsdFqLhHs6GCuz24IdHMMAmVVmLlT0fLEuU6QEN%2BrHflTqWpSqzr8y65pVjzj%2B%2F6Iwdr2TSX%2B%2F02cqtJ1U5SdjtJ230rnxwf8FvwWFNmLW4CPB4ZFT5I697ehlQXJwZlBQrs6fxXkMlcWClBDFWbKk%2FyRJ43IAat%2FuT8ogeCcyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204545Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJ4FTWHI3RPGCXKXA%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1d4247b2940a4e97da47d471db8e8d9d1cbac30ebf316327d0c9b902201ea6d5> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS Interurban buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=868df0e58fca47e79b942902dffd7da0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/868df0e58fca47e79b942902dffd7da0/google_transit_M6.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDBfMgVpiS%2B569g4CXCKcAy4cgRAaoS0PLITB7vvbPTzXQ%2BXLPM8amlEZo7DRUZhfdf5Yob2bUA7va2nGg8A3Zx7ZujJihNfIq7M8T33juJWACbOEpSvqnOEt2MvAPRKzoCvE%2FhvfYzouN0HXO3uldcRDR9NN0GjRI2YL0enqgDcSafeuU6qlQWmStMPFeXvOPkyY1iOtITVxNn6Zkw88aevliDnExIL2MC2VRrFSIMNRO%2BrtjpHEo0OPDeR6h68QXak1dh7DWOmZZMczkUke83c2kQnfhoPauTZBYaQxtGBWLDJQLpyMykE2TMP%2FEphUfa6UWv6VIHz4DhF8aRQE8zb4CHJ5pnuSMqOEatpFjXZHG%2BOLu%2F4aBdl4dIrNg9%2B89j5%2B1%2FEmiHENZgbE96Xa1JuizJ2FG4D4mghIaP5UbHMjbrLoZc8Eyj4%2BWAaF73NXfE7D3S%2BikWqcZHOFqTC45srgbsow%2F0f7kUKQcG3T%2BdIwU8YYh49QXA35NbPqCIDYzDszMjLr7ytyqBgKfNK3DtnldBau5jsvjGF6oIDTSIoOmkwuV%2Fhkn8a0Oj8o%2FfacyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204445Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJAA3APHCUBTF2JWA%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=270cd2af911c8b9cb0a7f58c8741bc7c671b840f48217357400de49d2c96349b> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS EMT buses"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-stations/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-stations/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-stations/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Access Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Access Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Access Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Halls Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=aaed26cc0ff64b0c947ac0bc3e033196> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/aaed26cc0ff64b0c947ac0bc3e033196/google_transit_M10.zip?X-Amz-Security-Token=FQoDYXdzEBsaDFzESgTwHAGmJOh5viKcAydczdijIbVdheBuGJs5NT%2Bf%2FDj6qTOVUTrgwLaBZCMkPJ%2FSnXYesUXhDm2CRJdroFA3OlKs72qriTsqh96%2BmAjbnAf87EfTPTCHWc%2BZnv%2Fauz8w21%2FbI4K8Cjo9aAGrlEUzhvwyE%2FYyIvmBsQ3FGvD929gRVN5jdyC%2F1PV9fKsllz7K%2FH361yG2ipfCXZtyCQMl9ebmyJJ4U9cLxLmYfosejm0zf7NyS2iGeuMvrJxN2KcqZ8xVlBmS5lO3DgI%2FE%2B%2BAFRR4MAopabAm%2Bvghw3UsqyJq9WNxjfqJg3fwXxTdHoP%2B2tdaQ9zhn3lw2j1XMOE%2F7l1ySuUCUhdJG%2F3O%2FDvcIA%2F4LxwV%2F28LzA%2Byw8MfVV5R0Cv66Ztp8482E24I%2F8ftktLVEazaeKJwE3uq8U1bGoHnhQPfTqnY0uxaNSuBnxUKOYCS2UnSdClQf1BtgbrOtSvLl1c%2BD2Y4PJS%2FpfHZckhQzZfUKVlJIt8yAB3Behap8IJYQU16%2F81Xk8ZdZofaxGXcIuPBLsE938fO14sKVkhRbtmr%2B1GaV60okt6hyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T185107Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAIUHHQ5M5LPE653GQ%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5e7dc7a74fe5b007481f4659ae07dc7d193481f927e13ab23c482898747eb1bc> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS Tram"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-stations/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-stations/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-stations/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Access Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Access Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Access Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Halls Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=1a25440bf66f499bae2657ec7fb40144> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/1a25440bf66f499bae2657ec7fb40144/google_transit_M5.zip?X-Amz-Security-Token=FQoDYXdzEBsaDK60b13t5KoXc7hZjyKcA9nXG1CuV7g3U8Fk2%2Bvg2g2OdkcMptXf3zuz08CymwWL90FHiaVRce6GAbcpfesdJzfUFVypoxBxTThHfG6rsKs%2Bu%2FWXo9vnc3gnqlyPTJ2sDz5GRU6TnjmlPUTMTs0NF2dsiO6t%2FRenE1HgVRcz71Be8U3mWJ8nEHT9VqF%2BlOiKLqGu8rz85Y4X7I9f8v9XDCq6YgPPoZeDT6DAnMxzAFNADVaxqSKfRblDIo%2BtG6TmuEpEaYdLhfKKOZ1ZO628hBVJrWVJ0c85l9Ocl5TzCKLqoA983m83XzvvASyAhDIagMdMWjtn4%2BxnVjLLH%2BUfR3uafdCyV9MrkX6YkQfzmO8ph1oOcPeO8RoUBlV3rVh934tCUoVGdX4w6%2BGiAqVoJO%2B4DpEnVINHAOF9moSwrut8YBNwP3vyaQiXQCfnZzbJkOsKW55wa8s6%2FvDw%2F0cSEWXhAsJ4OGM3FItjGwdo3HlQYNb2hFY4XnKOKl6KhUehq75MSKNdT2AyWhl03i5t9EGC7UdGQS01DLTAvc2%2BnbaAyGjI%2BmtaphOXTAUo886hyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T182907Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJQRMWUPWPQZJRY6A%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a4845a5011613a5f85fb53501cfb56fd97fa83252550c286dfc78230d83a630a> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS Train"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Lines Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Stops Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Access Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Access Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Access Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "KML Halls Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Metro"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=5c7f2951962540d69ffe8f640d94c246> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/5c7f2951962540d69ffe8f640d94c246/google_transit_M4.zip?X-Amz-Security-Token=FQoDYXdzEBkaDEMigCOSyNT2lUy53CKcA0hQNgoDYhS8bW5ru%2BYp2AzlQtYog1ywvALaQ10kNGklTmnJLXhbz0dhP0Jk6qT7ZJIc1Hk06LK2VCUCgg09MG69QYv68zwV1pABrZv6kkWlUq%2FPIBTOJXPurRb1UiNtMtic2krPL1SMJsTGIm2Dkqh3qCauh%2BWA9N9tatTebRmT%2F%2Fx7BPZQTOTbSMSS%2FxszMcKdlXquiPJRTy8rHwuXstz5jTQilKfSdBzPDhyZszubKUUXMac1NbpOVkQ8WgbRME9%2Bw0Y%2FR74PZO6CD2Vs71BUGbCTcm9Lq8Dk%2BjEhRzS2sUvTPOsU%2FNIayvUWxbhMHeBk7GHI3sXjNz74gftPo%2BlfQhpl%2FhS85dykpBfchV7gETIMCp8bgcQIay09ZVNsrmEaHrhfAwO3DrutukE1zrEbsiNbJCIM9THKMYU6VZTAsugeq5euvzO8qS95DoP2zpEK0R2WNuUuvdEEZ0n8%2Fr5wWmUCho64SghUWY1eHXBoH56leVpwigZCqSgX7hhwU2bbdLswQ08DHWCE5toLRMaG1c7WVFSEVTMHnRsog6mhyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T180230Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJUQHXIFPUF242J2Q%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9ade49029d7c5d83933466b45008f80d9ee5d65658d8e5087dadecb085d89a12> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:rights "public" ;
+	dct:title "GTFS Metro"^^<http://www.w3.org/2001/XMLSchema#date> .

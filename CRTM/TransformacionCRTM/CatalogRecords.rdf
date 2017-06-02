@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/interurban-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/interurban-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/emt-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/emt-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/emt-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/emt-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/urbanbus-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/interurban-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/interurban-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/emt-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/emt-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-access">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-access"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-platforms">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-platforms"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-halls">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-halls"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/tram-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/tram-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-access">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-access"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-platforms">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-platforms"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-halls">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-halls"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/train-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/train-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-lines">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-lines"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-stops">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-stops"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-access">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-access"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-platforms">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-platforms"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-halls">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-halls"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://crtm.linkeddata.es/metadata/catalogo/record/metro-gtfs">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+	<foaf:primaryTopic rdf:resource="http://crtm.linkeddata.es/metadata/catalogo/metro-gtfs"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:modified>
+	<dct:conformsTo>TransportDCAT-AP</dct:conformsTo>
+	<adms:status>created</adms:status>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-26</dct:issued>
+	<dct:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<dct:source>ISO19139</dct:source>
+</rdf:Description>
+
+</rdf:RDF>

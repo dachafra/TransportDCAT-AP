@@ -1,0 +1,1489 @@
+@base <http://crtm.linkeddata.es/metadata/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<catalogo/transporte> a dcat:Catalog ;
+	dcat:dataset <catalogo/urbanbus-stops> , <catalogo/urbanbus-lines> , <catalogo/interurbanbus-stops> , <catalogo/interurbanbus-lines> , <catalogo/emt-stops> , <catalogo/emt-lines> , <catalogo/urbanbus-gtfs> , <catalogo/interurban-gtfs> , <catalogo/emt-gtfs> , <catalogo/tram-lines> , <catalogo/tram-stations> , <catalogo/tram-access> , <catalogo/tram-platforms> , <catalogo/tram-halls> , <catalogo/tram-gtfs> , <catalogo/train-lines> , <catalogo/train-stations> , <catalogo/train-access> , <catalogo/train-platforms> , <catalogo/train-halls> , <catalogo/train-gtfs> , <catalogo/metro-lines> , <catalogo/metro-stops> , <catalogo/metro-access> , <catalogo/metro-platforms> , <catalogo/metro-halls> , <catalogo/metro-gtfs> ;
+	dct:description "Catalog describes the data of public transport from the open data portal of CRTM" ;
+	dct:publisher <organization/crtm> ;
+	dct:title "CRTM Transport System" ;
+	foaf:homepage <http://datos.crtm.es/> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dcat:themeTaxonomy <http://crtm.linkeddata.es/kos/vocabmetadata> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dcat:record <catalogo/record/urbanbus-stops> , <catalogo/record/urbanbus-lines> , <catalogo/record/interurbanbus-stops> , <catalogo/record/interurbanbus-lines> , <catalogo/record/emt-stops> , <catalogo/record/emt-lines> , <catalogo/record/urbanbus-gtfs> , <catalogo/record/interurban-gtfs> , <catalogo/record/emt-gtfs> , <catalogo/record/tram-lines> , <catalogo/record/tram-stations> , <catalogo/record/tram-access> , <catalogo/record/tram-platforms> , <catalogo/record/tram-halls> , <catalogo/record/tram-gtfs> , <catalogo/record/train-lines> , <catalogo/record/train-stations> , <catalogo/record/train-access> , <catalogo/record/train-platforms> , <catalogo/record/train-halls> , <catalogo/record/train-gtfs> , <catalogo/record/metro-lines> , <catalogo/record/metro-stops> , <catalogo/record/metro-access> , <catalogo/record/metro-platforms> , <catalogo/record/metro-halls> , <catalogo/record/metro-gtfs> ;
+	dct:rights "public" ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> .
+
+<organization/crtm> a org:Organization;
+	foaf:name "Consorcio Regional de Transporte de Madrid" ;
+	dct:type <http://eurovoc.europa.eu/3060> ;
+	skos:prefLabel "Consorcio Regional de Transporte de Madrid" ;
+	skos:altLabel "CRTM", "Consorcio Transportes Madrid", "Consorcio" .
+
+<catalogo/urbanbus-stops> a dcat:Dataset ;
+	dct:description "Localization where the urban buses stop in the City of Madrid" ;
+	dct:title "Stops of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <urbanbus-stops/csv> , <urbanbus-stops/kml> , <urbanbus-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:identifier "M9 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "46044e95c2f340e6a9e0790842bbbef2_0" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/urbanbus-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the urban buses in the City of Madrid" ;
+	dct:title "Lines of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <urbanbus-lines/csv> , <urbanbus-lines/kml> , <urbanbus-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:identifier "M9 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_2" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/interurbanbus-stops> a dcat:Dataset ;
+	dct:description "Localization where the interurban buses stop in the Province of Madrid" ;
+	dct:title "Stops of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <interurbanbus-stops/csv> , <interurbanbus-stops/kml> , <interurbanbus-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:identifier "M8 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "19884a02ac044270b91fa478d80f7858_0" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/interurbanbus-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the interurban buses in the Province of Madrid" ;
+	dct:title "Lines of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <interurbanbus-lines/csv> , <interurbanbus-lines/kml> , <interurbanbus-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:identifier "M8 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "19884a02ac044270b91fa478d80f7858_2" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/emt-stops> a dcat:Dataset ;
+	dct:description "Localizations where the EMT buses stop in the City of Madrid" ;
+	dct:title "Stops of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <emt-stops/csv> , <emt-stops/kml> , <emt-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:identifier "M6 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_0" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/emt-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the EMT buses in the City of Madrid" ;
+	dct:title "Lines of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <emt-lines/csv> , <emt-lines/kml> , <emt-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:identifier "M6 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_2" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^xsd:date .
+
+<catalogo/urbanbus-gtfs> a dcat:Dataset ;
+	dct:description "Information about the urban buses of Madrid in GTFS format" ;
+	dct:title "GTFS of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <urbanbus-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel4 (Municipality): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=357e63c2904f43aeb5d8a267a64346d8> ;
+	dct:identifier "357e63c2904f43aeb5d8a267a64346d8" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-06-22"^^xsd:date .
+
+<catalogo/interurban-gtfs> a dcat:Dataset ;
+	dct:description "Information about the interurban buses of Madrid in GTFS format" ;
+	dct:title "GTFS of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <interurban-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ;
+	dct:identifier "885399f83408473c8d815e40c5e702b7" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-06-22"^^xsd:date .
+
+<catalogo/emt-gtfs> a dcat:Dataset ;
+	dct:description "Information about the EMT buses of Madrid in GTFS format" ;
+	dct:title "GTFS of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <emt-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel4 (Municipality): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=868df0e58fca47e79b942902dffd7da0> ;
+	dct:identifier "868df0e58fca47e79b942902dffd7da0" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-06-22"^^xsd:date .
+
+<catalogo/tram-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the tram in the Province of Madrid" ;
+	dct:title "Lines of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-lines/csv> , <tram-lines/kml> , <tram-lines/shp> ;
+	dcat:keyword "Tram" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:identifier "M10 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_4" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/tram-stations> a dcat:Dataset ;
+	dct:description "Localization where the tram stops in the Province of Madrid" ;
+	dct:title "Stops of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-stops/csv> , <tram-stops/kml> , <tram-stops/shp> ;
+	dcat:keyword "Tram" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:identifier "M10 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_0" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/tram-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to tram" ;
+	dct:title "Access of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-access/csv> , <tram-access/kml> , <tram-access/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:identifier "M10 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_1" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/tram-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the tram" ;
+	dct:title "Platforms of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-platforms/csv> , <tram-platforms/kml> , <tram-platforms/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:identifier "M10 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_3" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/tram-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the tram" ;
+	dct:title "Halls of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-halls/csv> , <tram-halls/kml> , <tram-halls/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:identifier "M10 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_2" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/tram-gtfs> a dcat:Dataset ;
+	dct:description "Information about the tram of Madrid in GTFS format" ;
+	dct:title "GTFS of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <tram-gtfs/csv> ;
+	dcat:keyword "Tram" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=aaed26cc0ff64b0c947ac0bc3e033196> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^xsd:date .
+
+<catalogo/train-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the train in the Province of Madrid" ;
+	dct:title "Lines of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-lines/csv> , <train-lines/kml> , <train-lines/shp> ;
+	dcat:keyword "Train" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:identifier "M5 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_4" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/train-stations> a dcat:Dataset ;
+	dct:description "Localization where the train stops in the Province of Madrid" ;
+	dct:title "Stops of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-stops/csv> , <train-stops/kml> , <train-stops/shp> ;
+	dcat:keyword "Train" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:identifier "M5 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_0" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/train-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to train" ;
+	dct:title "Access of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-access/csv> , <train-access/kml> , <train-access/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:identifier "M5 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_1" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/train-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the train" ;
+	dct:title "Platforms of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-platforms/csv> , <train-platforms/kml> , <train-platforms/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:identifier "M5 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_3" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/train-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the train" ;
+	dct:title "Halls of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-halls/csv> , <train-halls/kml> , <train-halls/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:identifier "M5 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_2" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/train-gtfs> a dcat:Dataset ;
+	dct:description "Information about the train of Madrid in GTFS format" ;
+	dct:title "GTFS of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <train-gtfs/csv> ;
+	dcat:keyword "Train" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=1a25440bf66f499bae2657ec7fb40144> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^xsd:date .
+
+<catalogo/metro-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the metro in the Province of Madrid" ;
+	dct:title "Lines of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-lines/csv> , <metro-lines/kml> , <metro-lines/shp> ;
+	dcat:keyword "Metro" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:identifier "M4 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_4" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/metro-stops> a dcat:Dataset ;
+	dct:description "Localization where the metro stops in the Province of Madrid" ;
+	dct:title "Stops of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-stops/csv> , <metro-stops/kml> , <metro-stops/shp> ;
+	dcat:keyword "Metro" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:identifier "M4 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_0" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/metro-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to metro" ;
+	dct:title "Access of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-access/csv> , <metro-access/kml> , <metro-access/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:identifier "M4 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_1" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/metro-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the metro" ;
+	dct:title "Platforms of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-platforms/csv> , <metro-platforms/kml> , <metro-platforms/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:identifier "M4 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_3" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/metro-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the metro" ;
+	dct:title "Halls of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-halls/csv> , <metro-halls/kml> , <metro-halls/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:identifier "M4 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_2" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^xsd:date .
+
+<catalogo/metro-gtfs> a dcat:Dataset ;
+	dct:description "Information about the metro of Madrid in GTFS format" ;
+	dct:title "GTFS of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <metro-gtfs/csv> ;
+	dcat:keyword "Metro" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=5c7f2951962540d69ffe8f640d94c246> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^xsd:date .
+
+
+<catalogo/urbanbus-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Urban buses"^^xsd:date .
+
+<catalogo/urbanbus-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops Urban buses"^^xsd:date .
+
+<catalogo/urbanbus-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Urban buses"^^xsd:date .
+
+<catalogo/urbanbus-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Urban buses"^^xsd:date .
+
+<catalogo/urbanbus-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines Urban buses"^^xsd:date .
+
+<catalogo/urbanbus-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Urban buses"^^xsd:date .
+
+<catalogo/interurbanbus-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Interurban buses"^^xsd:date .
+
+<catalogo/interurbanbus-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops Interurban buses"^^xsd:date .
+
+<catalogo/interurbanbus-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Interurban buses"^^xsd:date .
+
+<catalogo/interurbanbus-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Interurban buses"^^xsd:date .
+
+<catalogo/interurbanbus-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines Interurban buses"^^xsd:date .
+
+<catalogo/interurbanbus-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Interurban buses"^^xsd:date .
+
+<catalogo/emt-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops EMT buses"^^xsd:date .
+
+<catalogo/emt-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops EMT buses"^^xsd:date .
+
+<catalogo/emt-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops EMT buses"^^xsd:date .
+
+<catalogo/emt-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines EMT buses"^^xsd:date .
+
+<catalogo/emt-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines EMT buses"^^xsd:date .
+
+<catalogo/emt-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2.zip> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2016-04-13"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines EMT buses"^^xsd:date .
+
+<catalogo/urbanbus-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=357e63c2904f43aeb5d8a267a64346d8> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/357e63c2904f43aeb5d8a267a64346d8/google_transit_M9.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDMPG6l%2FBtiIx9B%2F2miK3Az7jVom75Y9CpyyLVPRJZijuY7IJb6t%2Fus94O8KvPE7RsKR%2FU1XlyCweU0aqDEAyV7f65gKuvzahjmiiNFxnjJDjvUzM4t3Eb8DiIiHZKURjumibBQIefEqerLc2mo1uVJiJ94UloYynTWT6%2BURqNHLDhd20Ho9Fsa40EdeBp88lyvyy67QYBk6D8Mj0EwSTemmQXekcauJz5dDZJtDn5hF587QVeZdvXvGLV1NCY36qI0p37%2BCbYWDP%2BlcJfPnLnZ8Wdeggj8r2mUuBGf%2BvAMiOmt20Kxv2Nq3wlI49JSnZPNQEvL75tLfxozmMdQPS2lMKnGBSNdL%2FlLHotyMaPwpdyXW3IF7lG6VstUNZq1rtyXJP6ijgHUX4pwojf9OsIj%2BFGVVNUt7oVm0%2BUpvi5BQMx4479rg80ywoxfm98Kr9kNyXOsJtrznivOD0GAT%2BNBcWJORWND7XzR%2B7acr7ef%2FYF2p7gh48fspQyqcjqEkuD6rcE2auBm6YkaRWVPPZGOrGkuKm9GPo4Za5XKvx5CVYzSYE%2FTNJcowZXSjmwz%2BNTGdsIfCM1sAi%2F0RKdaZI85DNT1IVCEQozuacyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204520Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIAI6OBK3VAXLTT6Y2Q%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ad0e5177ea31978c54c8d6a4b63a55ea3f8b71abab80976bc24e60f78d9b78d2> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS Urban buses"^^xsd:date .
+
+<catalogo/interurban-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/885399f83408473c8d815e40c5e702b7/google_transit_M89.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDEFQg6goh6f2jntEsyKcA%2BELHD5arhNwZIb3maLPW6kSWIoSswmxWMrSJcO0qANJYwa1QVbT4f1fE3FVQEE%2BfflbNgEDTPVNCSiOamh0NaDpzlXO2SVXOVShltveycuqYbsrVRgkDi35fyujPkwoUyQojwb6GToMEMjYv565Qa6LIRlEde6fQApgweA1OCCkVffbKscoI3fxUG5ARWxgMC%2F23dqAQC6Q5v%2Bjle4xqBiCJU%2B41C71GKBXG%2BWW2uWeNwBqdlDkIPfgs7cZ18lcv4T%2Fht8VDuD8EAo16U0NrvKdiKCxsy47h2sZOXtPy%2FB%2FmaGBK4wxzi%2BGx%2BXK8U1mJMm66Wp7Ybu8EgVcl9BNcfdMkKoTTik4CnrduzqHvE3e10JsKjcyqTV1zYEpLpmwsS7YsdFqLhHs6GCuz24IdHMMAmVVmLlT0fLEuU6QEN%2BrHflTqWpSqzr8y65pVjzj%2B%2F6Iwdr2TSX%2B%2F02cqtJ1U5SdjtJ230rnxwf8FvwWFNmLW4CPB4ZFT5I697ehlQXJwZlBQrs6fxXkMlcWClBDFWbKk%2FyRJ43IAat%2FuT8ogeCcyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204545Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJ4FTWHI3RPGCXKXA%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1d4247b2940a4e97da47d471db8e8d9d1cbac30ebf316327d0c9b902201ea6d5> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS Interurban buses"^^xsd:date .
+
+<catalogo/emt-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=868df0e58fca47e79b942902dffd7da0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/868df0e58fca47e79b942902dffd7da0/google_transit_M6.zip?X-Amz-Security-Token=FQoDYXdzEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDBfMgVpiS%2B569g4CXCKcAy4cgRAaoS0PLITB7vvbPTzXQ%2BXLPM8amlEZo7DRUZhfdf5Yob2bUA7va2nGg8A3Zx7ZujJihNfIq7M8T33juJWACbOEpSvqnOEt2MvAPRKzoCvE%2FhvfYzouN0HXO3uldcRDR9NN0GjRI2YL0enqgDcSafeuU6qlQWmStMPFeXvOPkyY1iOtITVxNn6Zkw88aevliDnExIL2MC2VRrFSIMNRO%2BrtjpHEo0OPDeR6h68QXak1dh7DWOmZZMczkUke83c2kQnfhoPauTZBYaQxtGBWLDJQLpyMykE2TMP%2FEphUfa6UWv6VIHz4DhF8aRQE8zb4CHJ5pnuSMqOEatpFjXZHG%2BOLu%2F4aBdl4dIrNg9%2B89j5%2B1%2FEmiHENZgbE96Xa1JuizJ2FG4D4mghIaP5UbHMjbrLoZc8Eyj4%2BWAaF73NXfE7D3S%2BikWqcZHOFqTC45srgbsow%2F0f7kUKQcG3T%2BdIwU8YYh49QXA35NbPqCIDYzDszMjLr7ytyqBgKfNK3DtnldBau5jsvjGF6oIDTSIoOmkwuV%2Fhkn8a0Oj8o%2FfacyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170525T204445Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJAA3APHCUBTF2JWA%2F20170525%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=270cd2af911c8b9cb0a7f58c8741bc7c671b840f48217357400de49d2c96349b> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS EMT buses"^^xsd:date .
+
+<catalogo/tram-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Tram"^^xsd:date .
+
+<catalogo/tram-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines Tram"^^xsd:date .
+
+<catalogo/tram-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Tram"^^xsd:date .
+
+<catalogo/tram-stations/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Tram"^^xsd:date .
+
+<catalogo/tram-stations/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops Tram"^^xsd:date .
+
+<catalogo/tram-stations/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Tram"^^xsd:date .
+
+<catalogo/tram-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Access Tram"^^xsd:date .
+
+<catalogo/tram-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Access Tram"^^xsd:date .
+
+<catalogo/tram-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Access Tram"^^xsd:date .
+
+<catalogo/tram-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Tram"^^xsd:date .
+
+<catalogo/tram-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Tram"^^xsd:date .
+
+<catalogo/tram-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Tram"^^xsd:date .
+
+<catalogo/tram-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Tram"^^xsd:date .
+
+<catalogo/tram-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Halls Tram"^^xsd:date .
+
+<catalogo/tram-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "x-shapefile" ;
+	dct:issued "2015-08-19"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Tram"^^xsd:date .
+
+<catalogo/tram-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=aaed26cc0ff64b0c947ac0bc3e033196> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/aaed26cc0ff64b0c947ac0bc3e033196/google_transit_M10.zip?X-Amz-Security-Token=FQoDYXdzEBsaDFzESgTwHAGmJOh5viKcAydczdijIbVdheBuGJs5NT%2Bf%2FDj6qTOVUTrgwLaBZCMkPJ%2FSnXYesUXhDm2CRJdroFA3OlKs72qriTsqh96%2BmAjbnAf87EfTPTCHWc%2BZnv%2Fauz8w21%2FbI4K8Cjo9aAGrlEUzhvwyE%2FYyIvmBsQ3FGvD929gRVN5jdyC%2F1PV9fKsllz7K%2FH361yG2ipfCXZtyCQMl9ebmyJJ4U9cLxLmYfosejm0zf7NyS2iGeuMvrJxN2KcqZ8xVlBmS5lO3DgI%2FE%2B%2BAFRR4MAopabAm%2Bvghw3UsqyJq9WNxjfqJg3fwXxTdHoP%2B2tdaQ9zhn3lw2j1XMOE%2F7l1ySuUCUhdJG%2F3O%2FDvcIA%2F4LxwV%2F28LzA%2Byw8MfVV5R0Cv66Ztp8482E24I%2F8ftktLVEazaeKJwE3uq8U1bGoHnhQPfTqnY0uxaNSuBnxUKOYCS2UnSdClQf1BtgbrOtSvLl1c%2BD2Y4PJS%2FpfHZckhQzZfUKVlJIt8yAB3Behap8IJYQU16%2F81Xk8ZdZofaxGXcIuPBLsE938fO14sKVkhRbtmr%2B1GaV60okt6hyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T185107Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAIUHHQ5M5LPE653GQ%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5e7dc7a74fe5b007481f4659ae07dc7d193481f927e13ab23c482898747eb1bc> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS Tram"^^xsd:date .
+
+<catalogo/train-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Train"^^xsd:date .
+
+<catalogo/train-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines Train"^^xsd:date .
+
+<catalogo/train-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Train"^^xsd:date .
+
+<catalogo/train-stations/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Train"^^xsd:date .
+
+<catalogo/train-stations/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops Train"^^xsd:date .
+
+<catalogo/train-stations/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Train"^^xsd:date .
+
+<catalogo/train-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Access Train"^^xsd:date .
+
+<catalogo/train-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Access Train"^^xsd:date .
+
+<catalogo/train-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Access Train"^^xsd:date .
+
+<catalogo/train-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Train"^^xsd:date .
+
+<catalogo/train-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Train"^^xsd:date .
+
+<catalogo/train-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Train"^^xsd:date .
+
+<catalogo/train-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Train"^^xsd:date .
+
+<catalogo/train-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Halls Train"^^xsd:date .
+
+<catalogo/train-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-12-18"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Train"^^xsd:date .
+
+<catalogo/train-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=1a25440bf66f499bae2657ec7fb40144> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/1a25440bf66f499bae2657ec7fb40144/google_transit_M5.zip?X-Amz-Security-Token=FQoDYXdzEBsaDK60b13t5KoXc7hZjyKcA9nXG1CuV7g3U8Fk2%2Bvg2g2OdkcMptXf3zuz08CymwWL90FHiaVRce6GAbcpfesdJzfUFVypoxBxTThHfG6rsKs%2Bu%2FWXo9vnc3gnqlyPTJ2sDz5GRU6TnjmlPUTMTs0NF2dsiO6t%2FRenE1HgVRcz71Be8U3mWJ8nEHT9VqF%2BlOiKLqGu8rz85Y4X7I9f8v9XDCq6YgPPoZeDT6DAnMxzAFNADVaxqSKfRblDIo%2BtG6TmuEpEaYdLhfKKOZ1ZO628hBVJrWVJ0c85l9Ocl5TzCKLqoA983m83XzvvASyAhDIagMdMWjtn4%2BxnVjLLH%2BUfR3uafdCyV9MrkX6YkQfzmO8ph1oOcPeO8RoUBlV3rVh934tCUoVGdX4w6%2BGiAqVoJO%2B4DpEnVINHAOF9moSwrut8YBNwP3vyaQiXQCfnZzbJkOsKW55wa8s6%2FvDw%2F0cSEWXhAsJ4OGM3FItjGwdo3HlQYNb2hFY4XnKOKl6KhUehq75MSKNdT2AyWhl03i5t9EGC7UdGQS01DLTAvc2%2BnbaAyGjI%2BmtaphOXTAUo886hyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T182907Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJQRMWUPWPQZJRY6A%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a4845a5011613a5f85fb53501cfb56fd97fa83252550c286dfc78230d83a630a> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS Train"^^xsd:date .
+
+<catalogo/metro-lines/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Lines Metro"^^xsd:date .
+
+<catalogo/metro-lines/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Lines Metro"^^xsd:date .
+
+<catalogo/metro-lines/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Lines Metro"^^xsd:date .
+
+<catalogo/metro-stops/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Stops Metro"^^xsd:date .
+
+<catalogo/metro-stops/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Stops Metro"^^xsd:date .
+
+<catalogo/metro-stops/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Stops Metro"^^xsd:date .
+
+<catalogo/metro-access/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Access Metro"^^xsd:date .
+
+<catalogo/metro-access/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Access Metro"^^xsd:date .
+
+<catalogo/metro-access/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Access Metro"^^xsd:date .
+
+<catalogo/metro-platforms/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Platforms Metro"^^xsd:date .
+
+<catalogo/metro-platforms/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Platforms Metro"^^xsd:date .
+
+<catalogo/metro-platforms/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Platforms Metro"^^xsd:date .
+
+<catalogo/metro-halls/csv> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.csv> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "CSV Halls Metro"^^xsd:date .
+
+<catalogo/metro-halls/kml> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "KML" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.kml> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "vnd.google-earth.kml+xml" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "KML Halls Metro"^^xsd:date .
+
+<catalogo/metro-halls/shp> a dcat:Distribution ;
+	dcat:accessURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:format "SHP" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2.shp> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "application/x-zipped-shp" ;
+	dct:issued "2015-08-17"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "SHP Halls Metro"^^xsd:date .
+
+<catalogo/metro-gtfs/csv> a dcat:Distribution ;
+	dcat:accessURL <http://crtm.maps.arcgis.com/home/item.html?id=5c7f2951962540d69ffe8f640d94c246> ;
+	dct:format "CSV" ;
+	dct:license <http://www.crtm.es/licencia-de-uso> ;
+	dcat:downloadURL <https://ago-item-storage.s3-external-1.amazonaws.com/5c7f2951962540d69ffe8f640d94c246/google_transit_M4.zip?X-Amz-Security-Token=FQoDYXdzEBkaDEMigCOSyNT2lUy53CKcA0hQNgoDYhS8bW5ru%2BYp2AzlQtYog1ywvALaQ10kNGklTmnJLXhbz0dhP0Jk6qT7ZJIc1Hk06LK2VCUCgg09MG69QYv68zwV1pABrZv6kkWlUq%2FPIBTOJXPurRb1UiNtMtic2krPL1SMJsTGIm2Dkqh3qCauh%2BWA9N9tatTebRmT%2F%2Fx7BPZQTOTbSMSS%2FxszMcKdlXquiPJRTy8rHwuXstz5jTQilKfSdBzPDhyZszubKUUXMac1NbpOVkQ8WgbRME9%2Bw0Y%2FR74PZO6CD2Vs71BUGbCTcm9Lq8Dk%2BjEhRzS2sUvTPOsU%2FNIayvUWxbhMHeBk7GHI3sXjNz74gftPo%2BlfQhpl%2FhS85dykpBfchV7gETIMCp8bgcQIay09ZVNsrmEaHrhfAwO3DrutukE1zrEbsiNbJCIM9THKMYU6VZTAsugeq5euvzO8qS95DoP2zpEK0R2WNuUuvdEEZ0n8%2Fr5wWmUCho64SghUWY1eHXBoH56leVpwigZCqSgX7hhwU2bbdLswQ08DHWCE5toLRMaG1c7WVFSEVTMHnRsog6mhyQU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170526T180230Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAJUQHXIFPUF242J2Q%2F20170526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9ade49029d7c5d83933466b45008f80d9ee5d65658d8e5087dadecb085d89a12> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dcat:mediaType "text/csv" ;
+	dct:issued "2016-04-05"^^xsd:date ;
+	dct:rights "public" ;
+	dct:title "GTFS Metro"^^xsd:date .
+
+
+<catalogo/record/urbanbus-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/urbanbus-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/urbanbus-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/urbanbus-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/interurban-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/interurbanbus-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/interurban-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/interurbanbus-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/emt-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/emt-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/emt-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/emt-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/urbanbus-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/urbanbus-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/interurban-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/interurban-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/emt-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/emt-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-access> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-platforms> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-halls> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/tram-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/tram-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-access> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-platforms> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-halls> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/train-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/train-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-lines> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-stops> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-access> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-platforms> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-halls> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<catalogo/record/metro-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <catalogo/metro-gtfs> ;
+	dct:modified "2017-05-26"^^xsd:date ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^xsd:date ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .

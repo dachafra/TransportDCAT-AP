@@ -1,0 +1,251 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/interurban-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/interurban-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/emt-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/emt-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/emt-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/emt-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/urbanbus-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/urbanbus-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/interurban-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/interurban-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/emt-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/emt-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-access> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-platforms> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-halls> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/tram-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/tram-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-access> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-platforms> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-halls> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/train-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/train-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-lines> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-lines> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-stops> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-stops> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-access> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-access> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-platforms> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-platforms> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-halls> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-halls> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .
+
+<http://crtm.linkeddata.es/metadata/catalogo/record/metro-gtfs> a dcat:CatalogRecord ;
+	foaf:primaryTopic <http://crtm.linkeddata.es/metadata/catalogo/metro-gtfs> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:conformsTo "TransportDCAT-AP" ;
+	adms:status "created" ;
+	dct:issued "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+	dct:source "ISO19139" .

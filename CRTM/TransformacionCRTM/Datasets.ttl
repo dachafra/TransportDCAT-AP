@@ -1,0 +1,462 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-stops> a dcat:Dataset ;
+	dct:description "Localization where the urban buses stop in the City of Madrid" ;
+	dct:title "Stops of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/urbanbus-stops/csv> , <http://crtm.linkeddata.es/metadata/urbanbus-stops/kml> , <http://crtm.linkeddata.es/metadata/urbanbus-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_0> ;
+	dct:identifier "M9 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "46044e95c2f340e6a9e0790842bbbef2_0" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the urban buses in the City of Madrid" ;
+	dct:title "Lines of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/urbanbus-lines/csv> , <http://crtm.linkeddata.es/metadata/urbanbus-lines/kml> , <http://crtm.linkeddata.es/metadata/urbanbus-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/46044e95c2f340e6a9e0790842bbbef2_2> ;
+	dct:identifier "M9 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_2" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-stops> a dcat:Dataset ;
+	dct:description "Localization where the interurban buses stop in the Province of Madrid" ;
+	dct:title "Stops of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/interurbanbus-stops/csv> , <http://crtm.linkeddata.es/metadata/interurbanbus-stops/kml> , <http://crtm.linkeddata.es/metadata/interurbanbus-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_0> ;
+	dct:identifier "M8 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "19884a02ac044270b91fa478d80f7858_0" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurbanbus-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the interurban buses in the Province of Madrid" ;
+	dct:title "Lines of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/interurbanbus-lines/csv> , <http://crtm.linkeddata.es/metadata/interurbanbus-lines/kml> , <http://crtm.linkeddata.es/metadata/interurbanbus-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/19884a02ac044270b91fa478d80f7858_2> ;
+	dct:identifier "M8 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "19884a02ac044270b91fa478d80f7858_2" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-stops> a dcat:Dataset ;
+	dct:description "Localizations where the EMT buses stop in the City of Madrid" ;
+	dct:title "Stops of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/emt-stops/csv> , <http://crtm.linkeddata.es/metadata/emt-stops/kml> , <http://crtm.linkeddata.es/metadata/emt-stops/shp> ;
+	dcat:keyword "Bus" , "Stops" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_0> ;
+	dct:identifier "M6 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_0" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the EMT buses in the City of Madrid" ;
+	dct:title "Lines of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/emt-lines/csv> , <http://crtm.linkeddata.es/metadata/emt-lines/kml> , <http://crtm.linkeddata.es/metadata/emt-lines/shp> ;
+	dcat:keyword "Bus" , "Routes" , "AdminUnitLevel4(Municipality):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/8ef563f232c244ca9b3a5d2d6a3dc19b_2> ;
+	dct:identifier "M6 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "8ef563f232c244ca9b3a5d2d6a3dc19b_2" ;
+	dct:issued "2016-04-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/urbanbus-gtfs> a dcat:Dataset ;
+	dct:description "Information about the urban buses of Madrid in GTFS format" ;
+	dct:title "GTFS of Urban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/urbanbus-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel4 (Municipality): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=357e63c2904f43aeb5d8a267a64346d8> ;
+	dct:identifier "357e63c2904f43aeb5d8a267a64346d8" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/interurban-gtfs> a dcat:Dataset ;
+	dct:description "Information about the interurban buses of Madrid in GTFS format" ;
+	dct:title "GTFS of Interurban Bus" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/interurban-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/interurbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=885399f83408473c8d815e40c5e702b7> ;
+	dct:identifier "885399f83408473c8d815e40c5e702b7" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/emt-gtfs> a dcat:Dataset ;
+	dct:description "Information about the EMT buses of Madrid in GTFS format" ;
+	dct:title "GTFS of EMT Buses" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/emt-gtfs/csv> ;
+	dcat:keyword "Bus" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel4 (Municipality): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/urbanbus> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=868df0e58fca47e79b942902dffd7da0> ;
+	dct:identifier "868df0e58fca47e79b942902dffd7da0" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117735/> , <http://es.dbpedia.org/page/Madrid> ;
+	dct:modified "2016-06-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the tram in the Province of Madrid" ;
+	dct:title "Lines of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-lines/csv> , <http://crtm.linkeddata.es/metadata/tram-lines/kml> , <http://crtm.linkeddata.es/metadata/tram-lines/shp> ;
+	dcat:keyword "Tram" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_4> ;
+	dct:identifier "M10 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_4" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-stations> a dcat:Dataset ;
+	dct:description "Localization where the tram stops in the Province of Madrid" ;
+	dct:title "Stops of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-stops/csv> , <http://crtm.linkeddata.es/metadata/tram-stops/kml> , <http://crtm.linkeddata.es/metadata/tram-stops/shp> ;
+	dcat:keyword "Tram" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_0> ;
+	dct:identifier "M10 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_0" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to tram" ;
+	dct:title "Access of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-access/csv> , <http://crtm.linkeddata.es/metadata/tram-access/kml> , <http://crtm.linkeddata.es/metadata/tram-access/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_1> ;
+	dct:identifier "M10 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_1" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the tram" ;
+	dct:title "Platforms of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-platforms/csv> , <http://crtm.linkeddata.es/metadata/tram-platforms/kml> , <http://crtm.linkeddata.es/metadata/tram-platforms/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_3> ;
+	dct:identifier "M10 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_3" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the tram" ;
+	dct:title "Halls of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-halls/csv> , <http://crtm.linkeddata.es/metadata/tram-halls/kml> , <http://crtm.linkeddata.es/metadata/tram-halls/shp> ;
+	dcat:keyword "Tram" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/624dfeafb4d64580aa2ac5f24d8e8614_2> ;
+	dct:identifier "M10 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "624dfeafb4d64580aa2ac5f24d8e8614_2" ;
+	dct:issued "2015-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/tram-gtfs> a dcat:Dataset ;
+	dct:description "Information about the tram of Madrid in GTFS format" ;
+	dct:title "GTFS of the tram of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/tram-gtfs/csv> ;
+	dcat:keyword "Tram" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/tram> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=aaed26cc0ff64b0c947ac0bc3e033196> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the train in the Province of Madrid" ;
+	dct:title "Lines of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-lines/csv> , <http://crtm.linkeddata.es/metadata/train-lines/kml> , <http://crtm.linkeddata.es/metadata/train-lines/shp> ;
+	dcat:keyword "Train" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_4> ;
+	dct:identifier "M5 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_4" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-stations> a dcat:Dataset ;
+	dct:description "Localization where the train stops in the Province of Madrid" ;
+	dct:title "Stops of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-stops/csv> , <http://crtm.linkeddata.es/metadata/train-stops/kml> , <http://crtm.linkeddata.es/metadata/train-stops/shp> ;
+	dcat:keyword "Train" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_0> ;
+	dct:identifier "M5 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_0" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to train" ;
+	dct:title "Access of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-access/csv> , <http://crtm.linkeddata.es/metadata/train-access/kml> , <http://crtm.linkeddata.es/metadata/train-access/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_1> ;
+	dct:identifier "M5 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_1" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the train" ;
+	dct:title "Platforms of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-platforms/csv> , <http://crtm.linkeddata.es/metadata/train-platforms/kml> , <http://crtm.linkeddata.es/metadata/train-platforms/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_3> ;
+	dct:identifier "M5 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_3" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the train" ;
+	dct:title "Halls of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-halls/csv> , <http://crtm.linkeddata.es/metadata/train-halls/kml> , <http://crtm.linkeddata.es/metadata/train-halls/shp> ;
+	dcat:keyword "Train" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/9e353bbf4c5d4bea87f01d6d579d06ab_2> ;
+	dct:identifier "M5 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "9e353bbf4c5d4bea87f01d6d579d06ab_2" ;
+	dct:issued "2015-12-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/train-gtfs> a dcat:Dataset ;
+	dct:description "Information about the train of Madrid in GTFS format" ;
+	dct:title "GTFS of the train of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/train-gtfs/csv> ;
+	dcat:keyword "Train" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/train> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=1a25440bf66f499bae2657ec7fb40144> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-lines> a dcat:Dataset ;
+	dct:description "Information about the different lines of the metro in the Province of Madrid" ;
+	dct:title "Lines of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-lines/csv> , <http://crtm.linkeddata.es/metadata/metro-lines/kml> , <http://crtm.linkeddata.es/metadata/metro-lines/shp> ;
+	dcat:keyword "Metro" , "Lines" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_4> ;
+	dct:identifier "M4 Tramos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_4" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-stops> a dcat:Dataset ;
+	dct:description "Localization where the metro stops in the Province of Madrid" ;
+	dct:title "Stops of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-stops/csv> , <http://crtm.linkeddata.es/metadata/metro-stops/kml> , <http://crtm.linkeddata.es/metadata/metro-stops/shp> ;
+	dcat:keyword "Metro" , "Stops" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_0> ;
+	dct:identifier "M4 Estaciones" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_0" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-access> a dcat:Dataset ;
+	dct:description "Information about the place where passengers enter to metro" ;
+	dct:title "Access of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-access/csv> , <http://crtm.linkeddata.es/metadata/metro-access/kml> , <http://crtm.linkeddata.es/metadata/metro-access/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/access> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_1> ;
+	dct:identifier "M4 Accesos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_1" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-platforms> a dcat:Dataset ;
+	dct:description "Information about the elevated place that allows passengers to gett on or gett off in the metro" ;
+	dct:title "Platforms of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-platforms/csv> , <http://crtm.linkeddata.es/metadata/metro-platforms/kml> , <http://crtm.linkeddata.es/metadata/metro-platforms/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/platform> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_3> ;
+	dct:identifier "M4 Andenes" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_3" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-halls> a dcat:Dataset ;
+	dct:description "Information about the open space before the access to the platforms of the metro" ;
+	dct:title "Halls of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-halls/csv> , <http://crtm.linkeddata.es/metadata/metro-halls/kml> , <http://crtm.linkeddata.es/metadata/metro-halls/shp> ;
+	dcat:keyword "Metro" , "Other" , "AdminUnitLevel3(Province):Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/hall> ;
+	dct:accessRights "public" ;
+	foaf:page <http://data-crtm.opendata.arcgis.com/datasets/f3859438e5504a6b9ca745880f72ef1b_2> ;
+	dct:identifier "M4 VestÃ­bulos" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	adms:identifier "f3859438e5504a6b9ca745880f72ef1b_2" ;
+	dct:issued "2015-08-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2016-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://crtm.linkeddata.es/metadata/catalogo/metro-gtfs> a dcat:Dataset ;
+	dct:description "Information about the metro of Madrid in GTFS format" ;
+	dct:title "GTFS of the metro of Madrid" ;
+	dcat:contactPoint "mailto: contacto@crtm.es" ;
+	dcat:distribution <http://crtm.linkeddata.es/metadata/metro-gtfs/csv> ;
+	dcat:keyword "Metro" , "Calendar" , "Fare" , "Frequencies" , "Routes" , "Shapes" , "Stops" , "Transfers" , "Trips" , "AdminUnitLevel3 (Province): Madrid" , "Spain" ;
+	dct:publisher <http://crtm.linkeddata.es/metadata/organization/crtm> ;
+	dcat:theme <http://crtm.linkeddata.es/kos/vocabmetadata/metro> , <http://crtm.linkeddata.es/kos/vocabmetadata/stop> , <http://crtm.linkeddata.es/kos/vocabmetadata/line> , <http://crtm.linkeddata.es/kos/vocabmetadata/station> ;
+	dct:accessRights "public" ;
+	foaf:page <http://crtm.maps.arcgis.com/home/item.html?id=5c7f2951962540d69ffe8f640d94c246> ;
+	dct:identifier "5c7f2951962540d69ffe8f640d94c246" ;
+	dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+	dct:issued "2016-04-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dct:spatial <http://www.geonames.org/3117732/> , <http://es.dbpedia.org/page/Comunidad_de_Madrid> , <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Comunidad-Madrid> ;
+	dct:modified "2017-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
