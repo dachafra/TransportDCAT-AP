@@ -1,0 +1,5 @@
+# TransportDCAT-AP
+We present TransportDCAT-AP, a profile of the European standard for the representation of metadata in open data portals, DCAT-AP, created in the context of the CEF-OASIS project with a focus on the representation of metadata about open public transport data. Transport data is considered a key asset for the development of many types of applications, and hence we highlight the importance of providing good metadata for open data portals that are focused on the provision of public transport data, or general-purpose open data portals that cover public transport among their datasets. We estimate that the availability of such metadata will make it possible for agents to discover Open Transport Data throughout Europe. For that reason, we have worked on a common metadata model for the metadata representation of public transport data at a European level, taking into account
+its special characteristics.
+
+More info: https://oasis.team/storage/app/media/O1.2%20TransportDCAT-AP%20and%20Controlled%20Vocs.pdf 
